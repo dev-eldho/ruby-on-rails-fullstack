@@ -1,0 +1,16 @@
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+/usr/local/bin/ruby -I /usr/local/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-845b1f sitelibdir\=./.gem.20230220-15493-845b1f clean
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-845b1f sitelibdir\=./.gem.20230220-15493-845b1f
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-845b1f sitelibdir\=./.gem.20230220-15493-845b1f install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230220-15493-845b1f/debug

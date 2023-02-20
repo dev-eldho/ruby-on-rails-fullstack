@@ -1,0 +1,15 @@
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+/usr/local/bin/ruby -I /usr/local/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-3rk7l3 sitelibdir\=./.gem.20230220-15493-3rk7l3 clean
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-3rk7l3 sitelibdir\=./.gem.20230220-15493-3rk7l3
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /media/Disk1/Ruby Learning/note-app/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-15493-3rk7l3 sitelibdir\=./.gem.20230220-15493-3rk7l3 install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20230220-15493-3rk7l3/bootsnap
