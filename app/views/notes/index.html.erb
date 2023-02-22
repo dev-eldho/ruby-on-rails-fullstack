@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+<h3 style="text-align: center;">My Notes</h3>
+<p style="margin-left:4em">
+<%= link_to "Create new note", new_note_path, class: "btn btn-success"%>
+</p>
+<div id="notes" style="min-height:668px;">
+<div class="container">
+<div class="row">
+  <% @notes.each do |note| %>
+    <div class="col-12 col-md-4">
+    <div class="card-decks">
+    <%= render note %>
+    </div>
+  
+    </div>
+  </div>  
+  </div> 
+  <% end %>
+ 
+</div>
