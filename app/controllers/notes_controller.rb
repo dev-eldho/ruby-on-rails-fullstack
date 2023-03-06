@@ -20,16 +20,28 @@ class NotesController < ApplicationController
   end
 
   # POST /notes or /notes.json
-  def create
-    @note = Note.new(note_params)
+  def create  
 
+    puts note_params
+  
+    @note = Note.new(note_params)
+    
+    
+    user=User.find(current_user.id.to_i)
+    @note.user_id=user.user_id
+    
+    p @note
+    # new_hash = {id: current_user.id}
+    # updated_hash = note_params.merge(new_hash)
+    # p "Object #{updated_hash}"
     respond_to do |format|
       if @note.save
-        format.html { redirect_to note_url(@note), notice: "Note was successfully created." }
+        format.html { redirect_to note_url(@note), notice: "Note was successfully created."}
         format.json { render :show, status: :created, location: @note }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @note.errors, status: :unprocessable_entity }
+        puts @note.errors.full_messages
       end
     end
   end
@@ -38,7 +50,7 @@ class NotesController < ApplicationController
   def update
     respond_to do |format|
       if @note.update(note_params)
-        format.html { redirect_to note_url(@note), notice: "Note was successfully updated." }
+        format.html { redirect_to note_url(@note), notice: "Note was successfully updated."}
         format.json { render :show, status: :ok, location: @note }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -70,5 +82,6 @@ class NotesController < ApplicationController
 
     def note_params
       params.require(:note).permit(:title,:description)
+      # params[:note][:id] = current_user.id
     end 
 end

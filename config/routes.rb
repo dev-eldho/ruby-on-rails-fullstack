@@ -7,7 +7,7 @@ Rails.application.routes.draw do
  root "notes#index"
   resources:notes
 
-  devise_scope :user do
+    devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
